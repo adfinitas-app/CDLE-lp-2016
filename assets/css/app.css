@@ -219,9 +219,13 @@ html, body{
 	padding-left: 40px; 
 	padding-right: 40px;
 }
-@media screen and (max-width: 940px) {
+@media screen and (max-width: 1010px) {
 	.border-text-container {
 		border: 0;
+	}
+
+	.block-tel-footer {
+		padding-top: 30px;
 	}
 }
 
