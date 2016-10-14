@@ -7,6 +7,7 @@ $(document).ready(function() {
     responsive: 'false',
     controls: true,
     auto:'true',
+    speed: '1000',
     nextSelector: '#arrow-next',
     prevSelector: '#arrow-prev',
     nextText: '<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-arrow.png">',
@@ -14,7 +15,7 @@ $(document).ready(function() {
 
   $(window).on('resize',function(){
     $('bxslider').reloadSlider();
-  });
+});
   
   var x = ($(window).innerWidth() - $('#cta-video').innerWidth()) / 2;
   console.log($('#cta-video').innerWidth());
@@ -72,17 +73,17 @@ function 	scrollTo(next){
   {
     $('html, body').stop().animate({
       scrollTop: $(next).offset().top + 1
-    }, 700, 'swing');
+  }, 700, 'swing');
     return false;
-  }
+}
 };
 
 $(window).scroll(function() {
   if($(window).scrollTop() + $(window).height() > $(document).height() - 90) {
     $('#header').slideUp();
-  }else{
-   $('#header').slideDown();
- }
+}else{
+ $('#header').slideDown();
+}
 });
 
 function    scrollToBis(next){
@@ -92,7 +93,7 @@ function    scrollToBis(next){
   {
     $('html, body').stop().animate({
       scrollTop: $(next).offset().top + 1 - x
-    }, 700, 'swing');
+  }, 700, 'swing');
     return false;
-  }
+}
 };
