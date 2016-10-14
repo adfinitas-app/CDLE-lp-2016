@@ -188,6 +188,11 @@ html, body{
 	margin-bottom: 3px;
 }
 
+#logo-ideas {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .button-border p {
 	color: white; 
 	font-size: 12px; 
