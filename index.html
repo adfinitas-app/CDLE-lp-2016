@@ -7,6 +7,8 @@
 	<title>La Chaine de l'Espoir</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.css" />
 	<link rel='stylesheet' href='assets/css/app.css' type='text/css'/>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/jquery.bxslider.css"/>
 </head>
 <body>
 	<div style="display: inline;">
@@ -14,15 +16,143 @@
 			<p class="inline-block menu-header">VIDÉO</p><p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p><p class="inline-block menu-header">PROJET</p><p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p><p class="inline-block menu-header">CHIFFRES</p><p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p><p class="inline-block menu-header">RELATION DONATEUR</p>
 		</div>
 	</div>
-
-
-
-
-
-
-
-
+	<div id="part_chiffre" style="width: 100%; max-width: 100%; background-image:url('https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-bg-chiffre.jpg'); background-size:cover; position: relative">
+		<div class="bxslider" style="width: 100%;">
+			<div class="slide" style="height: 100%; background-color: #6ecfe2; display: flex; flex-wrap: wrap; align-items: center; justify-content: middle; height: 620px">
+				<div style="flex: 1; flex-grow: 1; text-align: center">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-slider-1.png" style="margin: auto; margin-bottom: 30px;"><br>
+					<div class="flex:1" style="max-width: 80vw; margin: auto;">
+						<div style="max-width: 500px; margin: auto; font-style: italic; color: white" class="text-stat">
+							<p style="margin-bottom:30px">« Que cela fezfze en aide à tous ces petits que la vie n'a pas gâté comme nous le sommes  et quelle leçon d'humanité nous recevons de votre association. Merci pour eux. »</p>
+							<p style="font-style: normal; font-weight: 900; font-size: 16px">Josseline L.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide" style="height: 100%; background-color: #f4ae10;  display: flex; flex-wrap: wrap; align-items: center; height: 620px">
+				<div style="flex: 1; flex-grow: 1; text-align: center">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-slider-2.png" style="margin: auto; margin-bottom: 30px;"><br>
+					<div style="max-width: 80vw; margin: auto;">
+						<div style="max-width: 500px; margin: auto; font-style: italic; color: white" class="text-stat">
+							<p style="margin-bottom:30px">« Tous ensemble, nous pouvons donner aux plus vulnérables une chance de vivre tout simplement »</p>
+							<p style="font-style: normal; font-weight: 900; font-size: 16px">Pr. Alain Deloche, Fondateur</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide" style="height: 100%; background-color: #e06535;  display: flex; flex-wrap: wrap; align-items: center; height: 620px">
+				<div style="flex: 1; flex-grow: 1; text-align: center">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-slider-3.png" style="margin: auto; margin-bottom: 30px;"><br>
+					<div style="max-width: 80vw; margin: auto;">
+						<div style="max-width: 520px; margin: auto; font-style: italic; color: white" class="text-stat">
+							<p style="margin-bottom:30px">« Nous ne remercierons jamais assez La Chaîne de l'Espoir de nous avoir procuré un tel bonheur, d'avoir pu accueillir ces enfants et de leur avoir sauvé la vie. »</p>
+							<p style="font-style: normal; font-weight: bold; font-size: 15px">Famille d’accueil</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide" style="height: 100%; background-color: #5a89c8;  display: flex; flex-wrap: wrap; align-items: center; height: 620px">
+				<div style="flex: 1; flex-grow: 1; text-align: center">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-slider-4.png" style="margin: auto; margin-bottom: 30px;"><br>
+					<div style="max-width: 80vw; margin: auto;">
+						<div style="max-width: 500px; margin: auto; font-style: italic; color: white" class="text-stat">
+							<p style="margin-bottom:30px">« La Chaîne de l’Espoir est une aventure collective qui nous unit et nous donne la force d’avancer ; nous ne pouvons pas abandonner ces enfants qui espèrent toujours. »</p>
+							<p style="font-style: normal; font-weight: bold; font-size: 15px">Dr. Éric Cheysson, Président</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="arrow-p"><span id="arrow-prev"></span></div>
+		<div class="arrow-n"><span id="arrow-next"></span></div>
+	</div>
+	<div id="part_chiffre" style="width: 100%; max-width: 100%; background-image:url('https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-bg-chiffre.jpg'); background-size:cover">
+		<div class="row" style="margin:auto; max-width: 800px; padding-top: 50px">
+			<p class="text-stat small-10 small-offset-1 medium-offset-0 columns" style="text-transform: uppercase; font-size: 30px; margin-bottom: 20px">Des chiffres qui parlent</p>
+			<div class="small-10 small-offset-1 medium-offset-0 medium-6 columns">
+				<p style="width: 60px; display: inline-block;" class="text-stat-bold">30</p>
+				<p class="text-stat" style="text-transform: uppercase; display: inline-block; vertical-align: top; padding-top: 17px; font-size: 25px;">Pays au total</p>
+				<hr style="margin-top: 42px">
+			</div>
+			<div class="small-10 small-offset-1 medium-offset-0 medium-6 columns">
+				<div style="display: inline-block; vertical-align: top; width: 60px">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-malette.png" style="padding-top: 12px">
+				</div>
+				<div style="display: inline-block">
+					<p style="display: inline-block;" class="text-stat-bold">431</span></p>
+					<p class="text-stat">bénévoles médicaux</p>
+				</div>
+				<hr>
+			</div>
+			<div class="small-10 small-offset-1 medium-offset-0 medium-6 columns">
+				<div style="display: inline-block; vertical-align: top; width: 60px">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-coeur.png" style="padding-top: 12px">
+				</div>
+				<div style="display: inline-block">
+					<p style="display: inline-block;" class="text-stat-bold">500</span></p>
+					<p class="text-stat">enfants opérés par an</p>
+				</div>
+				<hr>
+			</div>
+			<div class="small-10 small-offset-1 medium-offset-0 medium-6 columns">
+				<div style="display: inline-block; vertical-align: top; width: 60px">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-maison.png" style="padding-top: 12px">
+				</div>
+				<div style="display: inline-block">
+					<p style="display: inline-block;" class="text-stat-bold">4</span></p>
+					<p class="text-stat">hôpitaux construits</p>
+				</div>
+				<hr>
+			</div>
+			<div class="small-10 small-offset-1 medium-offset-0 medium-6 columns">
+				<div style="display: inline-block; vertical-align: top; width: 60px">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-main.png" style="padding-top: 12px">
+				</div>
+				<div style="display: inline-block">
+					<p style="display: inline-block;" class="text-stat-bold">300</span></p>
+					<p class="text-stat">familles d'accueil</p>
+				</div>
+				<hr>
+			</div>
+			<div class="small-10 small-offset-1 medium-offset-0 medium-6 columns end">
+				<div style="display: inline-block; vertical-align: top; width: 60px">
+					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-ecole.png" style="padding-top: 12px">
+				</div>
+				<div style="display: inline-block">
+					<p style="display: inline-block;" class="text-stat-bold">11000</span></p>
+					<p class="text-stat">écoliers scolarisés</p>
+				</div>
+				<hr>
+			</div>
+			<div class="small-10 small-offset-1 medium-offset-0 medium-12 columns end" style="padding-bottom: 40px">
+				<p class="text-stat" style="text-align: center">Ensemble, sauvons des enfants <span style="font-weight:bold"> chaque année</span></p>
+				<hr>
+			</div>
+		</div>
+	</div>
+	<div id="part_contact" style="width: 100%; max-width: 100%; background: white">
+		<div class="row" style="margin:auto; max-width: 800px; padding-top: 50px; padding-bottom: 50px;">
+			<p class="text-stat small-10 small-offset-1 medium-offset-0  columns" style="text-transform: uppercase; font-size: 30px; margin-bottom: 40px">Nous sommes à votre écoute</p>
+			<div class="small-12 columns padding-left" style="display: flex; align-items: center; justify-content: center;">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-slider-1.png" style="height: 20%; width: 20%; min-height: 100px; min-width: 150px;padding-right: 20px;  padding-left: 20px">
+				<p class="text-stat" style="line-height: 1.3">Pour toute question, notre service donateurs se tient à votre disposition : 
+					vous pouvez contacter <span style="font-weight: bold">Fabienne</span> au <span style="font-weight: bold">01 44 12 66 49</span> ou à <span style="color: #f6bb35; font-weight: bold">donateurs@chainedelespoir.org</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id="part_impots" style="width: 100%; max-width: 100%; background: #f6bb35">
+		<div class="row" style="margin:auto; max-width: 800px; padding-top: 50px; color: white">
+			<p class="text-stat small-10 small-offset-1 medium-offset-0  columns" style="text-transform: uppercase; font-size: 30px; margin-bottom: 40px;">Vos dons sont déductibles de vos impôts !</p>
+			<div class="small-12 columns padding-left" style="display: flex; align-items: center; justify-content: center; padding-bottom: 50px;">
+				<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-75.png" style="height: 20%; width: 20%; min-height: 100px; min-width: 150px; padding-right: 20px;  padding-left: 20px">
+				<p class="text-stat"  style="line-height: 1.3">du montant de vos dons sont déductibles de votre impôt sur le revenu dans la limite de 530€ (pour 2016).<br><br>Au-delà de cette somme, vous bénéficiez de la réduction de 66% ; dans la limite de 20% de votre revenu imposable.
+				</p>
+			</div>
+		</div>
+	</div>
 	<script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+	<script src="./assets/js/jquery.bxslider.min.js"></script>
 	<script src="assets/js/app.js" type="text/javascript"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.2.3/foundation.min.js" type="text/javascript"></script>
 </body>

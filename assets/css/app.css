@@ -15,3 +15,118 @@
 	padding-bottom: 2px;
 	margin: 0;
 }
+
+/* Slideshow container */
+.slideshow-container 
+{
+	position: relative;
+	margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text-stat
+{
+	font-family: 'Raleway';
+	font-size: 20px;	
+	margin-bottom: 0px;
+	line-height: 1;
+
+}
+
+.text-stat-bold
+{
+	font-size: 50px;
+	font-weight: bold;
+	margin-bottom: 0px;
+	line-height: 1;
+}
+
+/*SLIDER*/
+.arrow-n
+{
+	transition: .2s all "swing";
+	position: absolute; right: 20px; top: 380px; cursor: pointer
+}
+
+.arrow-p
+{
+	transition: .2s all "swing";
+	position: absolute; left: 20px; top: 380px; transform:rotate(180deg); cursor: pointer
+}
+
+.arrow-n:hover
+{
+	transform: scale(1.15);
+}
+
+.arrow-p:hover
+{
+	transform: scale(1.15) rotate(180deg);	
+}
+
+.arrow-n:active
+{
+	transform: scale(0.9);
+}
+
+.arrow-p:active
+{
+	transform: scale(0.9) rotate(180deg);	
+}
+
+.bx-viewport {
+	position: static!important; /* center to page correctly */
+	border: 0!important; /* border */
+	-webkit-box-shadow: none!important; /* these two shadows */
+	box-shadow: none!important;
+}
+.bxslider-inner {
+	vertical-align: middle;
+	display: inline-block;
+	float: none !important;
+}
+.padding-left{padding-left: 0}
+@media screen and (min-width: 640px) {
+	.arrow-n{right: 5%;}
+	.arrow-p{left: 5%;}
+}
+@media screen and (min-width: 900px) {
+	.arrow-n{right: 20%;}
+	.arrow-p{left: 20%;}
+}
+@media screen and (min-width: 1200px) {
+	.arrow-n{right: 27%;}
+	.arrow-p{left: 27%;}
+}
+@media screen and (min-width: 1600px) {
+	.arrow-n{right: 30%;}
+	.arrow-p{left: 30%;}
+}
+@media screen and (min-width: 640px) {
+	.padding-left{padding-left: 100px;}
+}
