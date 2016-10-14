@@ -1,9 +1,52 @@
+html, body{
+	overflow: hidden;
+	height: 100%;
+}
+
+#container-video-header {
+	max-width: 100%; 
+	margin: 0; 
+	padding: 0; 
+	position: relative;
+}
 #header {
+	font-size: 20px;
+	width: 100%;
 	max-width: 100%;;
-	color: white;
 	background: #222222;
-	position: sticky;
+	z-index: 9999;
 	text-align: center;
+}
+
+#video-header { position: relative; }
+
+#cta-video {
+	position: absolute;
+	display: block;
+	height: 40px;
+	width: 200px;
+	bottom: 60px;
+}
+
+.block-titre-footer {
+	font-weight: bold;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid white;
+}
+
+.logo-footer {
+	max-width: 30px;
+}
+
+.subtitle-footer {
+	font-size: 15px;
+	color: #555555;
+}
+
+.subtitle-footer:hover {
+	text-decoration: underline;
 }
 
 .inline-block {
@@ -15,6 +58,13 @@
 	padding-bottom: 2px;
 	margin: 0;
 }
+
+.block-link-footer p {
+	font-size: 14px;
+	margin-bottom: 0;
+	color: #555555;
+}
+
 
 /* Slideshow container */
 .slideshow-container 
@@ -111,6 +161,82 @@
 	float: none !important;
 }
 .padding-left{padding-left: 0}
+
+
+#header a,
+#header p {
+	font-family: 'Raleway';
+	color: white;
+	font-weight: bold;
+}
+#header p:hover {
+	color: #f6bb35;
+}
+
+.full {
+	min-height: 100vh;
+	max-width: 100%;
+}
+
+.button-border {
+	display: inline-block; 
+	height: 18px; 
+	background: #f6bb35;  
+	padding-left: 20px; 
+	padding-right: 20px; 
+	border-radius: 15px; 
+	margin-bottom: 3px;
+}
+
+.button-border p {
+	color: white; 
+	font-size: 12px; 
+	padding-bottom: 5px; 
+	font-weight: bold
+}
+.border-text {
+	display: inline-block; 
+	margin-bottom: 0; 
+	font-family: 'Raleway'; 
+	font-size: 18px; 
+	color: #222222;
+}
+.border-text-container {
+	display: inline; 
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	border-top: 1px solid #555555; 
+	border-bottom: 1px solid #555555;
+}
+
+#logo-idead {
+	display: inline-block; 
+	padding-left: 40px; 
+	padding-right: 40px;
+}
+@media screen and (max-width: 940px) {
+	.border-text-container {
+		border: 0;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.border-text-container {
+		border: 0;
+	}
+	#logo-efqm {
+		padding-top: 40px;
+	}
+
+	#logo-ideas {
+		padding-right: 0;
+	}
+
+	.box-footer {
+		padding-top: 30px;
+	}
+}
+
 @media screen and (min-width: 640px) {
 	.arrow-n{right: 5%;}
 	.arrow-p{left: 5%;}
@@ -130,3 +256,19 @@
 @media screen and (min-width: 640px) {
 	.padding-left{padding-left: 100px;}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
