@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  var ImagePauses = [5000,10000,15000,20000];
   $('.bxslider').bxSlider({
     pager: false,
     infiniteLoop: true,
@@ -7,6 +8,7 @@ $(document).ready(function() {
     responsive: 'false',
     controls: true,
     auto:'true',
+    pause: ImagePauses[1],
     speed: '1000',
     nextSelector: '#arrow-next',
     prevSelector: '#arrow-prev',
