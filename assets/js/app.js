@@ -29,11 +29,42 @@ $(window).resize(function(){
 });
 
 $('#cta-video').click( function() {
+  SendDataToWoopra();
   $('html').css({"overflow" : "visible", "height": "auto"});
   $('body').css({"overflow" : "visible", "height": "auto"});
   $('#header').css({"position" : "fixed"});
   scrollToBis($('#page'));
 });
+
+function extractUrlParams(){    
+  var t = document.location.search.substring(1).split('&'); var f = [];
+  for (var i=0; i<t.length; i++){
+    var x = t[ i ].split('=');
+    f[x[0]]=decodeURIComponent(x[1]);
+  }
+  return f;
+};
+
+function SendDataToWoopra() {
+  var p = extractUrlParams();
+
+  woopra.identify({
+    email: p['email'],
+    name: p['firstname'] + " " + p['lastname'],
+    firstname: p['firstname'],
+    lastname: p['lastname'],
+  });
+
+  woopra.track("interaction", {
+    action: "clic",
+    category: "btn-video-more_campaign-PA",
+    value: "",
+    url: document.location.href,
+    title: document.title,
+  });
+
+}
+
 
 function 	scrollTo(next){
 
