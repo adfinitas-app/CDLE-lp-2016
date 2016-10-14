@@ -13,7 +13,11 @@
 <body>
 	<div id="header" class="row">
 		<div style="display: inline; position: sticky">
-			<a><p class="inline-block menu-header">VIDÉO</p></a><p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p><a><p class="inline-block menu-header">PROJET</p></a><p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p><a><p class="inline-block menu-header">CHIFFRES</p></a><p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p><a><p class="inline-block menu-header">RELATION DONATEUR</p></a>
+			<a id="c_video"><p class="inline-block menu-header">VIDÉO</p></a>
+			<p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+			<a id="c_projet"><p class="inline-block menu-header">PROJET</p></a><p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+			<a id="c_chiffres"><p class="inline-block menu-header">CHIFFRES</p></a><p class="inline-block menu-header">&nbsp;&nbsp;|&nbsp;&nbsp;</p>
+			<a id="c_relations"><p class="inline-block menu-header">RELATION DONATEUR</p></a>
 		</div>
 	</div>
 
@@ -28,18 +32,18 @@
 			<p style="font-family: 'Raleway'; font-size: 18px; color: #222222; line-height: 24px; font-weight: bold">Un grand merci à vous qui avez rejoint notre chaîne de solidarité. Ici vous sont présentées toutes nos actions et ce que nous pouvons réaliser grâce à vous !</p>
 		</div>
 	</div>
-	<div class="row" style="padding: 40px">
+	<div id="projet" class="row" style="padding: 40px">
 		<div class="row">
 			<div class="small-10 small-offset-1 large-offset-2 large-4 columns">
 				<p style="margin-bottom: 0; font-family: 'Raleway'; font-size: 28px; color: #222222; line-height: 40px;">NOTRE PROJET ASSOCIATIF</p>
-				<p style="font-family: 'Raleway'; font-size: 14px; color: #555555; line-height: 20px;"><br />Partout dans le monde, des millions d’enfants sont condamnés faute d’accès à des soins médicaux ou à l’éducation.<br /><br />
+				<p style="font-family: 'Raleway'; font-size: 16px; color: #555555; line-height: 20px;"><br />Partout dans le monde, des millions d’enfants sont condamnés faute d’accès à des soins médicaux ou à l’éducation.<br /><br />
 					Créée en 1994 par le Professeur Alain Deloche, La Chaîne de l’Espoir intervient dans près de 30 pays en voie de développement pour lutter contre ces injustices du lieu de naissance.</p>
 				</div>
 				<div class="small-10 small-offset-1 large-offset-0 large-4 columns end" style="padding-left: 20px;">
 					<p style="text-transform: uppercase; margin-bottom: 0; font-family: 'Raleway'; font-size: 28px; color: #222222; line-height: 40px;">Ce que nous faisons 
 						grâce à vos dons
 					</p>
-					<p style="font-family: 'Raleway'; font-size: 14px; color: #555555; line-height: 20px;"><br />La Chaîne de l’Espoir a pour mission de :<br />
+					<p style="font-family: 'Raleway'; font-size: 16px; color: #555555; line-height: 20px;"><br />La Chaîne de l’Espoir a pour mission de :<br />
 						• Soigner, en France ou à l’étranger, des enfants qui ne peuvent l’être dans leur pays d’origine faute de moyens techniques ou financiers ;<br /><br />
 						• Former le personnel médical local dans les différentes spécialités pédiatriques ;<br /><br />
 						• Apporter les équipements nécessaires à la prise en charge médicale des enfants ;<br /><br />
@@ -58,14 +62,14 @@
 				</div>
 			</div>
 		</div>
-		<div id="part_chiffre" style="width: 100%; max-width: 100%; background-image:url('https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-bg-chiffre.jpg'); background-size:cover; position: relative">
+		<div style="width: 100%; max-width: 100%; background-image:url('https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-bg-chiffre.jpg'); background-size:cover; position: relative">
 			<div class="bxslider" style="width: 100%;">
 				<div class="slide" style="height: 100%; background-color: #6ecfe2; display: flex; flex-wrap: wrap; align-items: center; justify-content: middle; height: 620px">
 					<div style="flex: 1; flex-grow: 1; text-align: center">
 						<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-slider-1.png" style="margin: auto; margin-bottom: 30px;"><br>
 						<div class="flex:1" style="max-width: 80vw; margin: auto;">
 							<div style="max-width: 500px; margin: auto; font-style: italic; color: white" class="text-stat">
-								<p style="margin-bottom:30px">« Que cela fezfze en aide à tous ces petits que la vie n'a pas gâté comme nous le sommes  et quelle leçon d'humanité nous recevons de votre association. Merci pour eux. »</p>
+								<p style="margin-bottom:30px">« Que cela en aide à tous ces petits que la vie n'a pas gâté comme nous le sommes  et quelle leçon d'humanité nous recevons de votre association. Merci pour eux. »</p>
 								<p style="font-style: normal; font-weight: 900; font-size: 16px">Josseline L.</p>
 							</div>
 						</div>
@@ -108,7 +112,7 @@
 			<div class="arrow-p"><span id="arrow-prev"></span></div>
 			<div class="arrow-n"><span id="arrow-next"></span></div>
 		</div>
-		<div id="part_chiffre" style="width: 100%; max-width: 100%; background-image:url('https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-bg-chiffre.jpg'); background-size:cover">
+		<div id="chiffres" style="width: 100%; max-width: 100%; background-image:url('https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-bg-chiffre.jpg'); background-size:cover">
 			<div class="row" style="margin:auto; max-width: 882px; padding-top: 50px">
 				<p class="text-stat small-10 small-offset-1 medium-offset-0 columns" style="text-transform: uppercase; font-size: 30px; margin-bottom: 20px">Des chiffres qui parlent</p>
 				<div class="small-10 small-offset-1 medium-offset-0 medium-6 columns">
@@ -172,13 +176,17 @@
 				</div>
 			</div>
 		</div>
-		<div id="part_contact" style="width: 100%; max-width: 100%; background: white">
+		<div id="relations" style="width: 100%; max-width: 100%; background: white">
 			<div class="row" style="margin:auto; max-width: 882px; padding-top: 50px; padding-bottom: 50px;">
 				<p class="text-stat small-10 small-offset-1 medium-offset-0  columns" style="text-transform: uppercase; font-size: 30px; margin-bottom: 40px">Nous sommes à votre écoute</p>
 				<div class="small-12 columns padding-left" style="display: flex; align-items: center; justify-content: center;">
 					<img src="https://s3.amazonaws.com/heroku-adfinitas-campaign/CDLE-LP-2016/img-slider-1.png" style="height: 20%; width: 20%; min-height: 100px; min-width: 150px;padding-right: 20px;  padding-left: 20px">
 					<p class="text-stat" style="line-height: 1.3">Pour toute question, notre service donateurs se tient à votre disposition : 
-						vous pouvez contacter <span style="font-weight: bold">Fabienne</span> au <span style="font-weight: bold">01 44 12 66 49</span> ou à <span style="color: #f6bb35; font-weight: bold">donateurs@chainedelespoir.org</span>
+						vous pouvez contacter <span style="font-weight: bold">Fabienne</span> au <span style="font-weight: bold">01 44 12 66 49</span> ou à <a href="mailto:donateurs@chainedelespoir.org" class="address_mail" style="color: #f6bb35; font-weight: bold;"><span style=" overflow-wrap: break-word; word-wrap: break-word; -ms-word-break: break-all; word-break: break-all; word-break: break-word;white-space: pre-wrap; /* css-3 */
+						white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+						white-space: -pre-wrap; /* Opera 4-6 */
+						white-space: -o-pre-wrap; /* Opera 7 */
+						word-wrap: break-word;">donateurs@chainedelespoir.org</span></a>
 					</p>
 				</div>
 			</div>

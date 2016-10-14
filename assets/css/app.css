@@ -240,6 +240,10 @@ html, body{
 	.box-footer {
 		padding-top: 30px;
 	}
+
+	.address_mail {
+		font-size: 12px;
+	}
 }
 
 @media screen and (min-width: 640px) {

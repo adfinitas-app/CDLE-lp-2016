@@ -36,22 +36,41 @@ $('#cta-video').click( function() {
   scrollToBis($('#page'));
 });
 
+$("#c_projet").click(function(){
+    scrollTo("#projet");
+});
+
+$("#c_chiffres").click(function(){
+    scrollTo("#chiffres");
+});
+
+$("#c_relations").click(function(){
+    scrollTo("#relations");
+});
+
+$("#c_video").click(function(){
+    scrollTo("#container-video-header");
+});
+
 function 	scrollTo(next){
 
-  if ($(next).length != 0)
-  {
-    $('html, body').stop().animate({
-      scrollTop: $(next).offset().top + 1
-  }, 700, 'swing');
-    return false;
-}
+    $('html').css({"overflow" : "visible", "height": "auto"});
+    $('body').css({"overflow" : "visible", "height": "auto"});
+    $('#header').css({"position" : "fixed"});
+    if ($(next).length != 0)
+    {
+        $('html, body').stop().animate({
+          scrollTop: $(next).offset().top + 1
+      }, 700, 'swing');
+        return false;
+    }
 };
 
 $(window).scroll(function() {
   if($(window).scrollTop() + $(window).height() > $(document).height() - 90) {
     $('#header').slideUp();
 }else{
- $('#header').slideDown();
+   $('#header').slideDown();
 }
 });
 
